@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Build & Publish
-      - uses: elgohr/Publish-Docker-Github-Action@2.14
+        uses: elgohr/Publish-Docker-Github-Action@2.14
         with:
           name: paulhenrill/php-fpm
           username: ${{ secrets.DOCKER_USERNAME }}
