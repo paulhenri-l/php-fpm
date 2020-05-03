@@ -1,0 +1,15 @@
+name: Build & Publish
+on: [push]
+jobs:
+  builds:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Build & Publish
+      - uses: elgohr/Publish-Docker-Github-Action@2.14
+        with:
+          name: paulhenrill/php-fpm
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          snapshot: true
+          tag_semver: true
