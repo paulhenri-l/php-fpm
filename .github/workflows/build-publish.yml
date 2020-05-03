@@ -1,5 +1,8 @@
 name: Build & Publish
-on: [push]
+on:
+  push:
+    branches:
+      - master
 jobs:
   builds:
     runs-on: ubuntu-latest
@@ -13,3 +16,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           snapshot: true
           tag_semver: true
+          tags: "7.4-alpine"
