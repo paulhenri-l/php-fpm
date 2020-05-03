@@ -1,8 +1,8 @@
 name: Build & Publish
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - master
   schedule:
     - cron: '0 2 * * 0'
 jobs:
@@ -16,6 +16,5 @@ jobs:
           name: paulhenrill/php-fpm
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          tag_semver: true
           tags: 'latest,7.4'
           cache: ${{ github.event_name != 'schedule' }}
