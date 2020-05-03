@@ -27,7 +27,7 @@ Here are the php extensions enabled.
 Use it in your dockerfile
 
 ```dockerfile
-FROM paulhenrill/php-fpm:latest
+FROM paulhenrill/php-fpm:7.4
 
 # ...
 ```
