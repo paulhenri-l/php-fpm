@@ -18,5 +18,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           snapshot: true
           tag_semver: true
-          tags: "latest,7.4-alpine"
           cache: ${{ github.event_name != 'schedule' }}
