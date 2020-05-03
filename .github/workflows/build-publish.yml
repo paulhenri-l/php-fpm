@@ -1,8 +1,8 @@
 name: Build & Publish
 on:
   push:
-    branches:
-      - master
+    tags:
+      - *
   schedule:
     - cron: '0 2 * * 0'
 jobs:
