@@ -15,6 +15,7 @@ Here are the php extensions enabled.
 - fileinfo
 - json
 - mbstring
+- opcache
 - pcntl
 - pdo
 - pdo_mysql
