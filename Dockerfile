@@ -1,4 +1,4 @@
-FROM composer as composer
+FROM composer:2 as composer
 
 FROM php:7.4-fpm-alpine
 
@@ -9,6 +9,9 @@ RUN apk add --no-cache --virtual .phpize-deps $PHPIZE_DEPS \
         && docker-php-ext-install pdo_mysql \
         && docker-php-ext-install pcntl \
         && docker-php-ext-install opcache \
+        && docker-php-ext-install sysvmsg \
+        && docker-php-ext-install sysvsem \
+        && docker-php-ext-install sysvshm \
         && apk del -f .phpize-deps
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
