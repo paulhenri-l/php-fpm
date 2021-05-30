@@ -1,6 +1,6 @@
 # PHP-FPM Image
 
-This php-fpm image is tailored for Laravel
+This php-fpm image is tailored for Laravel it uses php8
 
 ## Software
 
@@ -28,7 +28,7 @@ Here are the php extensions enabled.
 Use it in your dockerfile
 
 ```dockerfile
-FROM paulhenrill/php-fpm:7.4
+FROM paulhenrill/php-fpm:2.0
 
 # ...
 ```
