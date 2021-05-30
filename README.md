@@ -1,6 +1,6 @@
 # PHP-FPM Image
 
-This php-fpm image is taylored for Laravel
+This php-fpm image is tailored for Laravel
 
 ## Software
 
