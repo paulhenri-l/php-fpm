@@ -1,5 +1,7 @@
 # PHP-FPM Image
 
+[![Build & Publish](https://github.com/paulhenri-l/php-fpm/actions/workflows/build-publish.yml/badge.svg)](https://github.com/paulhenri-l/php-fpm/actions/workflows/build-publish.yml)
+
 This php-fpm image is tailored for Laravel it uses php8
 
 ## Software
