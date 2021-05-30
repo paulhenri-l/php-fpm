@@ -15,4 +15,3 @@ RUN apk add --no-cache --virtual .phpize-deps $PHPIZE_DEPS \
         && apk del -f .phpize-deps
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
-
