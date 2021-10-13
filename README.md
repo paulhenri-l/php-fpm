@@ -4,7 +4,7 @@ This php-fpm image is tailored for Laravel it uses php8
 
 ## Software
 
-Composer is available at the /usr/bin/composer path.
+Composer and git are both installed.
 
 ## Enabled extensions
 
@@ -29,7 +29,7 @@ Here are the php extensions enabled.
 Use it in your dockerfile
 
 ```dockerfile
-FROM paulhenrill/php-fpm:2.0
+FROM paulhenrill/php-fpm:2.4
 
 # ...
 ```

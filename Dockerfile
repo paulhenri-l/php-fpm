@@ -17,4 +17,6 @@ RUN apk add --no-cache --virtual .phpize-deps $PHPIZE_DEPS \
         && pecl clear-cache \
         && apk del -f .phpize-deps
 
+RUN apk add --no-cache git
+
 COPY --from=composer /usr/bin/composer /usr/bin/composer
